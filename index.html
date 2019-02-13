@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lakshya</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="shortcut icon" href="img/logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+<style>
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/************* Section 1 *************** */
+#ideathon > p {
+	margin-left: 50%;
+}
+#hero-image {
+  background-image: url("img/hack.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#hero-text {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+  width: 80%;
+  order: 1;
+}
+#hero-text h1{
+	margin: auto;
+	font-size:36px; 
+	font-family:'Helvetica';
+}
+#hero-text h2{
+	font-size: 36px;
+	margin: auto;
+font-family: 'Satisfy', cursive;
+	letter-spacing: 2px;
+}
+.overlay {
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.85); /*can be anything, of course*/
+    display: flex;
+    flex-direction: column;
+} 
+.button {
+    border: none;
+    color: white;
+    padding: 18px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: auto;
+    width: 80%;
+}
+.button5 {
+    background-color: white;
+    color: black;
+}
+.button5:hover {
+    padding: 22px 40px;
+    background-color: #3498db;
+    color: white;
+	font-size:18px;
+}
+#hackImage >img{
+	width: 40vw
+}
+#hackImage{
+	margin: auto;
+	padding: 40px;
+}
+
+
+@media only screen and (min-width: 860px) {
+	#hero-text {
+	  color: white;
+	  font-family: 'Open Sans', sans-serif;
+	  font-size: 18px;
+	  line-height: 1.6;
+	  text-align: center;
+	  width: 50%;
+	  order: 2;
+	}
+	#hero-text h1{
+		font-size:40px; 
+		font-weight: bold;
+		
+	}
+	#hero-text h2{
+		font-size:48px; 
+		font-weight: bold;
+		
+	}
+	.button{
+		width: 70%;
+	}
+	.overlay{
+		flex-direction: row;
+	}
+}
+
+/************* Section 1 ends *************** */
+
+
+/* Thrust Areas */
+
+#thrustSection{
+	display: flex; 
+	min-height: 100vh;
+	flex-direction: column;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+#thrustRow {
+	display: flex;
+	max-width: 80%;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.thrustCard{
+	margin:auto; 
+	width: 250px; 
+	margin-right: 1em; 
+	margin-left: 1em; 
+	height: auto; 
+	box-shadow: 0px 4px 20px -6px #bbb; 
+	display: flex; 
+	flex-direction: column;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 50px;
+	
+}
+.thrustImage{
+	height: auto; 
+	margin: auto;
+	border-radius: 6px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.thrustText{
+	width: 80%; 
+	height: auto; 
+	margin: auto; 
+	text-align: center;
+	margin-bottom: 15px;
+}
+.thrustTitle > h1{
+		font-family: 'Open Sans', sans-serif;
+		color:#222;
+		font-size: 18px;
+	}
+.thrustTitle > p{
+		font-family: 'Open Sans', sans-serif;
+		color:#888;
+		font-size: 12px;
+	}
+
+	#thrustHeader > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: #3498db;
+		font-size: 24px;
+		text-align: center;
+	
+	}
+	#thrustHeader {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin: auto;
+		
+	}
+	#thrustHeader >p {
+		font-size:12px;
+		font-family: 'Open Sans', sans-serif;
+		text-align:center;
+		width:80%;
+		margin:auto;
+	}
+
+@media only screen and (min-width: 860px){
+	#thrustSection{
+		display: flex; 
+		min-height: 100vh;
+	}
+	#thrustHeader {
+		margin-top: 180px;
+		margin-bottom: 0px;
+	}
+	#thrustHeader >p {
+		font-size:20px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.thrustTitle > h1{
+		
+		font-size: 24px;
+	}
+	#thrustRow {
+		
+	}
+	.thrustCard{
+		margin:auto; 
+		width: 250px; 
+		margin-right: 1em; 
+		margin-left: 1em; 
+		height: auto; 
+		box-shadow: 0px 4px 20px -6px #bbb; 
+		display: flex; 
+		flex-direction: column;
+		border-radius: 6px;
+		cursor: pointer;
+		margin-bottom:100px;
+		flex-grow: 1;
+	}
+	#thrustHeader > h1 {
+		font-size: 48px;
+	}
+	.thrustImage{
+		height: auto; 
+		margin: auto;
+	}
+	.thrustText{
+		width: 80%; 
+		height: auto; 
+		margin: auto; 
+		text-align: center;
+		margin-bottom: 15px;
+		
+	}
+
+}
+
+/* Thrust Areas Ends here */
+
+
+/* Description Section */
+
+#desc {
+    	display: flex; 
+	min-height: 100vh;
+	flex-direction: column;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+#descHeader > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: #3498db;
+		font-size: 24px;
+		text-align: center;
+	
+	}
+#descHeader >p {
+		font-size:12px;
+		font-family: 'Open Sans', sans-serif;
+		text-align:center;
+		width:80%;
+		margin:auto;
+	}
+
+#codejam {
+                margin:auto; 
+		margin-right: 1em; 
+		margin-left: 1em; 
+		height: auto; 
+		display: flex; 
+		flex-direction: column;
+		border-radius: 6px;
+		cursor: pointer;
+		margin-bottom:100px;
+padding: 16px;
+}
+#ideathon{
+        margin:auto; 
+		margin-right: 1em; 
+		margin-left: 1em; 
+		height: auto; 
+		display: flex; 
+		flex-direction: column;
+		border-radius: 6px;
+		cursor: pointer;
+		margin-bottom:100px;
+padding: 16px;
+
+}
+#codejam > p, #ideathon > p {
+font-size:12px;
+		font-family: 'Open Sans', sans-serif;
+		width:100%;
+		margin:auto;
+        letter-spacing: 1px;
+            line-height: 2.25;
+            margin-left: 0%;
+}
+#codejam > h1, #ideathon > h1 {
+      font-family: 'proxima-nova', sans-serif;
+		
+		font-size: 18px;
+		text-align: center;
+		            margin-left: 50%;
+
+}
+
+#descRow {
+
+display: flex;
+flex-direction:column;
+}
+@media only screen and (min-width: 660px){
+
+
+#descHeader > h1{		
+font-size: 48px;
+}
+
+#codejam, #ideathon {
+   width: 45%;
+}
+#descHeader >p {
+		font-size:20px;
+}
+#codejam > h1, #ideathon > h1 {
+      font-family: 'proxima-nova', sans-serif;
+		
+		font-size: 24px;
+		text-align: center;
+}
+#descRow {
+  flex-direction: row;
+}
+#codejam > p, #ideathon > p {
+font-size:16px;
+margin-left: 60%;
+}
+}
+/* Description Section Ends here */
+
+.freebirdFormviewerViewFooterEmbeddedLogoImage>a > img {
+	display: none!important;
+}
+
+</style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/scrolling-nav.css">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+</head>
+<body>
+
+	<header class="header" style="  background: linear-gradient(to right, #ff416c, #ff4b2b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ ">
+		<a href="/" class="logo"><img src="img/logo.png" height="30px;"></a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+		<ul class="menu" style="background-color: transparent;color: white;">
+			<li><a href="/" style="color: white;">Home</a></li>
+			<li><a href="/" style="color: white;">Domain</a></li>
+			<li><a href="/" style="color: white;">Register</a></li>
+			
+			<!--<li><a href="events.html" style="color: white;">Events</a></li>-->
+			<!--<li><a href="index.php/#contactUs" style="color: white;">Contact Us</a></li>-->
+		</ul>
+	</header>
+
+<!-- Section 1 -->
+<div id="hero-image">
+	<div class="overlay">
+		<!-- <div id="hackImage">
+			<img src="img/hackImg.png">
+		</div> -->
+  		<div id="hero-text">
+   	 		<h1>LAKSHYA PRESENTS</h1><br>
+    		
+				<h2>SMART INDIA IDEATHON 2019</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+    			<br><br>
+			<a href="#register" class="button button5">REGISTER NOW</a>
+  		</div>
+	</div>
+</div>
+<!-- Section 1 ended-->
+
+
+ <div class="services">
+      <h1>DOMAINS</h1>
+      <div class="cen">
+        <div class="service">
+          <i class="fas fa-anchor"></i>
+          <h2>Health and safety</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+
+        <div class="service">
+          <i class="fab fa-android"></i>
+          <h2>Mobility</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+
+        <div class="service">
+          <i class="fab fa-angellist"></i>
+          <h2>Enviornment</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+
+        
+
+        <div class="service">
+          <i class="fas fa-archway"></i>
+          <h2>Employement and education</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+
+      </div>
+    </div>
+<section id="desc">
+     <div id="descHeader">
+	<h1>IDEATHON</h1>
+<p> You all might have faced different problems in Mumbai but have you ever thought of taking part in developing Mumbai. Here's a golden chance to showcase your creative ideas.  </p>
+     </div>
+    
+
+
+<div id="ideathon">
+ 
+
+<p>
+Ideathons is a research, brainstorming and sprint event. The team will have to throw in their ideas, present them to get feedback and what they should be working on or how they should go about it. </p><br> <p>During Ideathon you along with your team come together to brainstorm on a certain issue and provide a solution to it using analytical research, market analysis, theoretical and practical knowledge. The implementable ideas have to be presented with a proof of concept and a research paper has to be prepared in the end. </p>
+
+ </div>
+     
+
+</section>
+
+<!-- Section Ended --> 
+
+
+<!-- Regsitration Form Section -->
+
+<!-- Regsitration Form Section Ends -->
+
+
+
+<div id="footer" style="background-color: #111;padding: 12px;">
+	<p style="color: white;text-align: center;font-family:  'Open Sans', sans-serif;">Developed by Ranjit Desai <span style="font-size: 18px;">&#9829;</span> 
+ </p>
+</div>
+
+<script src="scrollreveal.min.js"></script>
+<script src="scrolling-nav.js"></script>
+
+
+<script>
+	
+	window.sr = ScrollReveal({reset: true });
+	sr.reveal('.rtcontainer', {duration: 500, origin: 'right', scale: 0.5});
+	sr.reveal('.leftImage', {duration: 1000, origin: 'left', scale: 0.5});
+	sr.reveal('.rightImage', {duration: 1000, origin: 'left', scale: 0.5});
+
+	//Section1
+	sr.reveal('#section1img', {duration: 1000, origin: 'left', scale: 0.5});
+	sr.reveal('#section1para', {duration: 1000, origin: 'left', scale: 0.5});
+
+	//Process
+	sr.reveal('.processCard', {duration: 1000, origin: 'left', scale: 0.5});
+	sr.reveal('#processHeader', {duration: 1000, origin: 'left', scale: 0.5});
+
+
+	//Problems
+	sr.reveal('.thrustCard', {duration: 1000, origin: 'left', scale: 0.5});
+	sr.reveal('#thrustHeader', {duration: 1000, origin: 'left', scale: 0.5});
+
+		//Spread
+	sr.reveal('.spreadBox', {duration: 1000, origin: 'left', scale: 0.5});
+	sr.reveal('#spreadTitle', {duration: 1000, origin: 'left', scale: 0.5});
+
+		//Codejam
+	sr.reveal('#codejam', {duration: 1000, origin: 'left', scale: 0.5});
+	sr.reveal('#ideathon', {duration: 1000, origin: 'left', scale: 0.5});
+
+
+	function myFunction() {
+	    var x = document.getElementById("navbar");
+	    if (x.className === "navbar") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "navbar";
+	    }
+	}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,960 @@
+/* Hero Section */
+
+
+#section1 p {
+	letter-spacing: 0.4px;
+	width: 58%;
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+}
+
+/*	This is the extra section added to test the code*/	
+#below{
+		background-color: #111;
+		height: 100vh;
+	}
+
+@media only screen and (min-width: 860px) {
+	#section1 p {
+		font-size: 20px;
+		width: 54%;
+	}
+}
+/* Hero Section Ends here */
+
+
+
+/* Navbar */
+
+a {
+  color: #555;
+}
+
+/* header */
+
+.header {
+font-family:  'Open Sans', sans-serif;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/*.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}*/
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 400px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768 */
+
+@media (min-width: 860px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* Navbar ends here */
+
+
+/* Vision */
+
+/* Container of the section Right Left*/
+	#rightleft{
+		display: flex;
+		min-height: 100vh;
+	}
+	/*Container of the section to display 80% width content in center*/
+	#rlcontainer{
+		width: 80%;
+		display: flex;
+		margin: auto;
+		padding: 30px;
+		flex-direction: column;
+	}
+/*	Contains all the content of the text in right
+*/	.rightText{
+		display: flex;
+	}
+
+	.leftText{
+		
+		display: flex;
+	}
+
+	.rtcontainer{
+		margin: auto;
+		width: 85%;
+	}
+	.rtcontainer > p {
+		text-align: justify;
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 12px;
+	}
+	.rtcontainer > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: #3498db;
+		font-size: 36px;
+		text-align: center;
+	}
+
+	/*Contains all the content of the image in left*/
+
+	.rightImage{
+		
+		margin:auto;
+		display: flex;
+	}
+
+	.leftImage{
+		
+		margin:auto;
+		display: flex;
+	}
+	
+	.rightImage > img , .leftImage > img {
+		height: auto;
+		width: 80%;
+		margin: auto;
+		max-height: 400px;
+	}
+
+/* List styles */
+.mission-list{
+	height: 24px; 
+	width: 24px;
+	margin-bottom: -10px;
+
+}
+.list-text {
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 12px;
+		margin: auto;  
+		margin-left: 12px;
+	}
+@media only screen and (min-width: 860px) {
+	/* Container of the section Right Left*/
+	#rightleft{
+		display: flex;
+		min-height: 100vh;
+	}
+	.list-text {
+		font-size: 14px;
+	}
+	#rlcontainer{
+		flex-direction: row;
+	}
+/*	Contains all the content of the text in right */
+	.leftText{
+		flex: 1;
+		order: 1;
+	}
+
+	.rightText{
+		flex: 1;
+		order: 2;
+	}
+
+	.rtcontainer{
+		width: 80%;
+		//margin-right: 0;
+	}
+	.rtcontainer > p {
+		text-align: justify;
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 20px;
+	}
+	.list-text {
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 16px;
+		margin: auto;  
+		margin-left: 12px;
+	}
+
+	.rtcontainer > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: #3498db;
+		font-size: 48px;
+		text-align: left;
+	}
+/*	Contains all the content of the image in left
+*/
+	.rightImage{
+		flex: 1;
+		order: 2;
+	}
+	.rightImage > img {
+
+		max-height: 600px;
+	}
+
+	.leftImage{
+		flex: 1;
+		order: 1;
+	}
+	.leftImage > img {
+
+		max-height: 600px;
+	}
+}
+
+/* Vision Ends here */
+
+/* Thrust Areas */
+
+#thrustSection{
+	display: flex; 
+	min-height: 100vh;
+	flex-direction: column;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+#thrustRow {
+	display: flex;
+	max-width: 80%;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.thrustCard{
+	margin:auto; 
+	width: 250px; 
+	margin-right: 1em; 
+	margin-left: 1em; 
+	height: auto; 
+	box-shadow: 0px 4px 20px -6px #bbb; 
+	display: flex; 
+	flex-direction: column;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 50px;
+	
+}
+.thrustImage{
+	height: auto; 
+	margin: auto;
+	border-radius: 6px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.thrustText{
+	width: 80%; 
+	height: auto; 
+	margin: auto; 
+	text-align: center;
+	margin-bottom: 15px;
+}
+.thrustTitle > h1{
+		font-family: 'Open Sans', sans-serif;
+		color:#222;
+		font-size: 18px;
+	}
+.thrustTitle > p{
+		font-family: 'Open Sans', sans-serif;
+		color:#888;
+		font-size: 12px;
+	}
+
+	#thrustHeader > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: #3498db;
+		font-size: 24px;
+		text-align: center;
+	
+	}
+	#thrustHeader {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin: auto;
+		
+	}
+	#thrustHeader >p {
+		font-size:12px;
+		font-family: 'Open Sans', sans-serif;
+		text-align:center;
+		width:80%;
+		margin:auto;
+	}
+
+@media only screen and (min-width: 860px){
+	#thrustSection{
+		display: flex; 
+		min-height: 100vh;
+	}
+	#thrustHeader {
+		margin-top: 180px;
+		margin-bottom: 0px;
+	}
+	#thrustHeader >p {
+		font-size:20px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.thrustTitle > h1{
+		
+		font-size: 24px;
+	}
+	#thrustRow {
+		
+	}
+	.thrustCard{
+		margin:auto; 
+		width: 250px; 
+		margin-right: 1em; 
+		margin-left: 1em; 
+		height: auto; 
+		box-shadow: 0px 4px 20px -6px #bbb; 
+		display: flex; 
+		flex-direction: column;
+		border-radius: 6px;
+		cursor: pointer;
+		margin-bottom:100px;
+	}
+	#thrustHeader > h1 {
+		font-size: 48px;
+	}
+	.thrustImage{
+		height: auto; 
+		margin: auto;
+	}
+	.thrustText{
+		width: 80%; 
+		height: auto; 
+		margin: auto; 
+		text-align: center;
+		margin-bottom: 15px;
+		
+	}
+
+}
+
+/* Thrust Areas Ends here */
+
+/* Process Starts here */
+
+#processSection{
+	display: flex; 
+	min-height: 100vh;
+	flex-direction: column;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: rgba(0, 30, 60, 0.8); /*can be anything, of course*/
+}
+#processRow {
+	display: flex;
+
+	max-width: 80%;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.processCard{
+	margin:auto; 
+	width: 250px; 
+	height: auto;
+	margin-right: 1em; 
+	margin-left: 1em;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 50px;
+	padding: 10px;
+}
+.processText{
+	width: 80%; 
+	height: auto; 
+	margin: auto; 
+	text-align: center;
+	margin-bottom: 15px;
+}
+.processTitle > h1{
+		font-family: 'Open Sans', sans-serif;
+		color:#fff;
+		font-size: 18px;
+	}
+.processTitle > p{
+		font-family: 'Open Sans', sans-serif;
+		color:#fff;
+		font-size: 12px;
+	}
+
+#processHeader > h1 {
+	font-family: 'proxima-nova', sans-serif;
+		color: #fff;
+		font-size: 24px;
+		text-align: center;
+	
+}
+#processHeader {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin: auto;
+	
+}
+#processOverlay{
+		background-image: url("../img/a.jpg");
+		
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  background-blend-mode: overlay;
+		}
+#processHeader > p {
+		font-size: 12px;
+		font-family: 'Open Sans', sans-serif;
+		color:#fff;
+		text-align:center;
+		width:80%;
+		margin:auto;
+	}
+
+@media only screen and (min-width: 860px){
+	#processSection{
+		display: flex; 
+		min-height: 100vh;
+	}
+	#processHeader {
+		margin-top: 180px;
+		margin-bottom: 0px;
+	}
+	.processTitle > h1{
+		
+		font-size: 24px;
+	}
+	#processRow {
+		
+	}
+	.processCard{
+		margin:auto; 
+		width: 250px; 
+		height: auto;
+		margin-right: 1em; 
+		margin-left: 1em;
+		display: flex; 
+		justify-content: center;
+		align-items: center;
+		border-radius: 6px;
+		cursor: pointer;
+		margin-bottom:100px;
+	}
+	#processHeader > h1 {
+		font-size: 48px;
+	}
+	#processHeader > p {
+		font-size: 20px;
+		font-family: 'Open Sans', sans-serif;
+		color:#fff;
+		margin-bottom: 40px;
+	}
+	.processTitle > p{
+		font-family: 'Open Sans', sans-serif;
+		color:#fff;
+		font-size: 16px;
+	}
+	.processText{
+		width: 80%; 
+		height: auto; 
+		margin: auto; 
+		text-align: center;
+		margin-bottom: 15px;
+		
+	}
+
+}
+
+/* Process Ends here */
+
+
+/* Spread the word Section */
+
+ 
+ #spreadSection{
+		display: flex;
+		min-height: 100vh;
+	}
+	/*Container of the section to display 80% width content in center*/
+
+	#spreadSection{
+			z-index: 1;
+		    width: 100%;
+		    background: rgba(0, 30, 60, 0.8); /*can be anything, of course*/
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		#contactUs{
+		background-image: url("../img/a.jpg");
+		
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  background-blend-mode: overlay;
+		}
+
+		#spreadContainer{
+			height: auto;
+			width: 80%; 
+			background-color: white; 
+			border-radius: 10px; 
+			text-align: center;
+			margin: auto;
+			box-shadow: 0px 10px 60px 0px #000;
+		}
+		.spreadBox{
+			width: 100%;
+			text-align: center;
+			margin: .6em; /* important */
+			padding: .6em;
+		}
+		
+		.spreadmethodTitle{
+			text-align: center;
+			font-family:  'Open Sans', sans-serif;
+			color:#444;
+			font-size: 12px;
+			font-weight: bold;
+		}
+		#spreadTitle > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: #3498db;
+		font-size: 24px;
+		text-align: center;
+	
+	}
+	#spreadTitle{
+		margin-top: 60px;
+		margin-bottom: 60px;
+		
+	}
+	#spreadTitle >p {
+		font-size:12px;
+		font-family: 'Open Sans', sans-serif;
+		text-align:center;
+		width:80%;
+		margin:auto;
+	}
+
+@media only screen and (max-width: 400px) {
+	.spreadBox > img {
+		margin-left: -30px;
+	}
+}
+@media only screen and (min-width: 860px) {
+	/* Container of the section Right Left*/
+	
+	#spreadTitle > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: #444;
+		font-size: 36px;
+	}
+	#spreadTitle >p {
+		font-size:20px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.spreadmethodTitle{
+			
+			font-size: 18px;
+			}
+
+	.spreadBox{
+			width: 20%;
+			text-align: center;
+			margin: .6em; /* important */
+			padding: .6em;
+	}
+}
+
+
+/* Spread the word Ends here Section */
+
+
+
+/* Our Support */
+#ourSupportSection{
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+#ourSupportHeader > p {
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 12px;
+	}
+	#ourSupportHeader > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: #3498db;
+		font-size: 24px;
+		text-align: center;
+	}
+	#ourSupportHeader {
+		margin: auto;
+		width: 85%;
+	}
+	#supporterLogoRow{
+			height: auto;
+			width: 80%;  
+			text-align: center;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			
+			
+		}
+		.supporterLogo{
+			width: 15%;
+			text-align: center;
+			margin: .6em; /* important */
+			padding: .6em;
+			text-align:center;
+		}
+		.supporterLogo >img {
+			
+			margin: auto;
+			
+		}
+
+@media only screen and (min-width: 860px){
+	#ourSupportHeader > p {
+		
+		font-size: 24px;
+	}
+	#ourSupportSection{
+		flex-direction: column;
+	}
+	#ourSupportHeader > h1 {
+		font-size: 36px;
+		text-align: center;
+	}
+	#supporterLogoRow{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.supporterLogo{
+			width: 15%;
+			text-align: center;
+			margin: .6em; /* important */
+			padding: .6em;
+			margin: auto;
+		}
+}
+/* Our support ends here */
+
+
+
+/* Container of the section Right Left*/
+	#volunteersSection{
+		display: flex;
+		min-height: 100vh;
+		flex-direction:column;
+		padding-bottom:50px;
+	}
+	/*Container of the section to display 80% width content in center*/
+	
+	#volunteersHeader{
+		margin:auto;
+		font-family: 'proxima-nova', sans-serif;
+		color: #3498db;
+		font-size: 16px;
+		text-align: center;
+	
+	}
+	
+	#volunteersBody{
+		margin:auto;
+		display:flex;
+		flex-direction:column;
+	}
+	#volunteersContent{
+		margin: auto;
+		width: 85%;
+		padding: 20px;
+		
+	}
+	#volunteersContentContainer > p {
+		text-align: justify;
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 12px;
+	}
+	#volunteersContentContainer > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: #3498db;
+		font-size: 36px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	/*Contains all the content of the image in left*/
+
+	#volunteersImage{
+		
+		margin:auto;
+		display: flex;
+	}
+
+	#volunteersContentContainer{
+		width:80%;
+		margin:auto;
+	}
+	
+	#volunteersImage > img {
+		height: auto;
+		width: 80%;
+		margin: auto;
+		max-height: 400px;
+	}
+	#volunteersButton{
+	background-color:#3498db;
+	padding:12px;
+	border-radius:6px;
+	color:white;
+	font-family:  'Open Sans', sans-serif;
+	width:50%;
+	margin:auto;
+	text-align:center;
+	font-weight:bold;
+	text-decoration:none;
+	margin-top: 40px;
+	
+	}
+
+@media only screen and (min-width: 860px) {
+	#volunteersContentContainer > p {
+		text-align: justify;
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	
+	#volunteersContentContainer > h1 {
+		margin-bottom: 40px;
+	}
+		
+	#volunteersButton{
+	background-color:#3498db;
+	padding:12px;
+	border-radius:6px;
+	color:white;font-family:  'Open Sans', sans-serif;
+	width:35%;
+	margin:40px auto 0px auto;
+	text-align:center;
+	font-weight:bold;
+	text-decoration:none;
+	}
+		
+	#volunteersContent{
+		margin: auto;
+		width: 85%;
+		padding: 20px;
+		
+	}
+	#volunteersContentContainer{
+		width:80%;
+		margin:auto;
+		margin-left:0px;
+	}
+	#volunteersHeader{
+		margin:auto;
+		font-family: 'proxima-nova', sans-serif;
+		color: #3498db;
+		font-size: 24px;
+		text-align: center;
+	
+	}
+	#volunteersBody{
+		margin:auto;
+		display:flex;
+		flex-direction:row;
+	}
+}
+
+/* Vision Ends here */
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.services{
+  background: #f1f1f1;
+  text-align: center;
+}
+.services h1{
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+.service{
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service:hover{
+  background: #ddd;
+}
+.service i{
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.service h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+.service p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .service{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service{
+    width: 100%;
+  }
+}
+
